@@ -34,5 +34,7 @@ namespace EtiquetasBlumar
             InitializeComponent();
             instance = this;
         }
+
+
     }
 }
