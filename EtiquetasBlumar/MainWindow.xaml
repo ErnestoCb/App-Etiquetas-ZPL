@@ -1,0 +1,44 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EtiquetasBlumar"
+        xmlns:talex="http://schemas.talex-soft.com/2010/xaml/presentation" x:Class="EtiquetasBlumar.MainWindow"
+        mc:Ignorable="d"
+        Title="Etiquetas Blumar" Height="500" Width="800">
+    <Grid>
+        <Label Content="Etiqueta Blumar" HorizontalAlignment="Left" Margin="380,20,0,0" VerticalAlignment="Top" Height="53" Width="217" FontSize="20pt"/>
+        <Label Content="Material" HorizontalAlignment="Left" Margin="380,70,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <ComboBox x:Name="cbxMaterial" HorizontalAlignment="Left" Margin="520,75,0,0" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Lote" HorizontalAlignment="Left" Margin="380,105,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <TextBox x:Name="txtLote" HorizontalAlignment="Left" Height="23" Margin="520,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Porción" HorizontalAlignment="Left" Margin="380,140,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <TextBox x:Name="txtPorcion" HorizontalAlignment="Left" Height="23" Margin="520,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Correlativo" HorizontalAlignment="Left" Margin="380,175,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <TextBox x:Name="txtCorrelativo" HorizontalAlignment="Left" Height="23" Margin="520,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Fecha" HorizontalAlignment="Left" Margin="380,210,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <DatePicker x:Name="fechaPicker" HorizontalAlignment="Left" Margin="520,215,0,0" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Envase" HorizontalAlignment="Left" Margin="380,245,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <ComboBox x:Name="cbxEnvase" HorizontalAlignment="Left" Margin="520,250,0,0" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Almacen" HorizontalAlignment="Left" Margin="380,280,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <ComboBox x:Name="cbxAlmacen" HorizontalAlignment="Left" Margin="520,285,0,0" VerticalAlignment="Top" Width="200"/>
+        <Label Content="N° Etiquetas" HorizontalAlignment="Left" Margin="380,335,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <talex:NumericUpDown HorizontalAlignment="Left" Margin="520,340,0,0" VerticalAlignment="Top" Height="23" Width="200"/>
+        <Button x:Name="btnImprimir" Content="Imprimir" HorizontalAlignment="Left" Margin="600,380,0,0" VerticalAlignment="Top" Width="120" Height="30"/>
+        <Image x:Name="imgLogo" HorizontalAlignment="Left" Height="170" Margin="62,37,0,0" VerticalAlignment="Top" Width="230" Source="img/logo.jpg" Stretch="Fill"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="120" Margin="52,290,0,0" VerticalAlignment="Top" Width="250"/>
+        <Label x:Name="lblLote" Content="000000" HorizontalAlignment="Left" Margin="50,291,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <Label Content="-" HorizontalAlignment="Left" Margin="120,291,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <Label x:Name="lblCorrelativo" Content="000" HorizontalAlignment="Left" Margin="130,291,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <Label Content="-" HorizontalAlignment="Left" Margin="165,291,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <Label x:Name="lblPorcion" Content="00" HorizontalAlignment="Left" Margin="180,291,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <Label Content="/" HorizontalAlignment="Left" Margin="210,291,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <Label x:Name="lblJuliano" Content="000" HorizontalAlignment="Left" Margin="220,291,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <Label Content="-" HorizontalAlignment="Left" Margin="260,291,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <Label x:Name="lblAño" Content="00" HorizontalAlignment="Left" Margin="270,291,0,0" VerticalAlignment="Top" FontSize="15pt"/>
+        <Image x:Name="imgCodBarra" HorizontalAlignment="Left" Height="59" Margin="62,335,0,0" VerticalAlignment="Top" Width="230"/>
+
+
+    </Grid>
+</Window>
