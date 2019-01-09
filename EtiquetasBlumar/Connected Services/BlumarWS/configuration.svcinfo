@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configurationSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-wcfconfigurationsnapshot">
+  <behaviors />
+  <bindings>
+    <binding digest="System.ServiceModel.Configuration.BasicHttpBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;rfcNetSoap&quot; /&gt;" bindingType="basicHttpBinding" name="rfcNetSoap" />
+  </bindings>
+  <endpoints>
+    <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://200.54.43.156/BLUMAR/rfcNet.asmx&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;rfcNetSoap&quot; contract=&quot;BlumarWS.rfcNetSoap&quot; name=&quot;rfcNetSoap&quot; /&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://200.54.43.156/BLUMAR/rfcNet.asmx&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;rfcNetSoap&quot; contract=&quot;BlumarWS.rfcNetSoap&quot; name=&quot;rfcNetSoap&quot; /&gt;" contractName="BlumarWS.rfcNetSoap" name="rfcNetSoap" />
+  </endpoints>
+</configurationSnapshot>

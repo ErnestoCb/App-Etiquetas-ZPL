@@ -1,0 +1,15 @@
+﻿<Window x:Class="EtiquetasBlumar.centros"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EtiquetasBlumar"
+        mc:Ignorable="d"
+        Title="Centros" Height="300" Width="400">
+    <Grid>
+        <Label Content="Seleccionar Centro" FontSize="20" HorizontalAlignment="Left" Margin="19,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.686,0.676"/>
+        <ComboBox x:Name="comboAdminCentro" SelectedValuePath="Tag" HorizontalAlignment="Left" Margin="19,113,0,0" VerticalAlignment="Top" Width="330" Height="30"/>
+        <Button x:Name="saveCentro" Content="Guardar Centro" HorizontalAlignment="Left" Margin="222,177,0,0" VerticalAlignment="Top" Width="127" Height="34" Click="SaveCentro_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ZMOV_10031">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="datos" type="tns:request_ZMOV_10031" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="request_ZMOV_10031" />
+      <s:element name="ZMOV_10031Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZMOV_10031Result" type="tns:responce_ZMOV_10031" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="responce_ZMOV_10031">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DATOS_HU" type="tns:ArrayOfZMOV_10031_DATOS_HU" />
+          <s:element minOccurs="0" maxOccurs="1" name="GT_RETUNR" type="tns:ArrayOfZMOV_10031_GT_RETUNR" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfZMOV_10031_DATOS_HU">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ZMOV_10031_DATOS_HU" nillable="true" type="tns:ZMOV_10031_DATOS_HU" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZMOV_10031_DATOS_HU">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EXIDV" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Z_NO_SOL_SENASA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Z_NO_EXP_SENASA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Z_TECNOLOG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Z_TERMOGRAFO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VEGR1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VEGR2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VEGR3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VEGR4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VEGR5" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZZLDDAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZZPPLAN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VHILM_KU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZTEMP" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfZMOV_10031_GT_RETUNR">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ZMOV_10031_GT_RETUNR" nillable="true" type="tns:ZMOV_10031_GT_RETUNR" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZMOV_10031_GT_RETUNR">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TYPE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUMBER" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MESSAGE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LOG_NO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LOG_MSG_NO" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MESSAGE_V1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MESSAGE_V2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MESSAGE_V3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MESSAGE_V4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PARAMETER" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ROW" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FIELD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SYSTEM" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ZSD_10003">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="datos" type="tns:request_ZSD_10003" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="request_ZSD_10003">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ALMACEN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CENTRO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CUSTOMER_DATA" type="tns:ZSD_10003_CUSTOMER_DATA" />
+          <s:element minOccurs="0" maxOccurs="1" name="PEDIDO_VENTAS" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZSD_10003_CUSTOMER_DATA">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ZCHOFER" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZRUT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZTELEFONO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZEMP_TRANSP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZNOTRACTOR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZPATENTE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZGUIA_REMISION" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZPRECINTO_PORT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZPRECINTO_LINEA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZPRECINTO_SENASA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZPRECINTO_EXPORT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZATMOSFERA_CONTR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZTEMPERATURA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZCOLD_TREATMENT" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ZHOJA_RUTA" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZLIC_CONDUCTOR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZID_FISCAL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZALMACEN_DESTINO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZRUC_DESTINO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZDIR_DESTINO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZZTERMOGRA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZCONTENEDOR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZNUMSELLO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZNAVE_EMB" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZPUERTO_DES" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZHORA_SALIDA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZNUMSELL2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZNUMSELL3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZNUMSELL4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZNUMSELL5" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZNUMSELL6" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZNUMSELL7" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ZETD" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ZSD_10003Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZSD_10003Result" type="tns:responce_ZSD_10003" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="responce_ZSD_10003">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="GT_PARTICION" type="tns:ArrayOfZSD_10003_GT_PARTICION" />
+          <s:element minOccurs="0" maxOccurs="1" name="GT_RETUNR" type="tns:ArrayOfZSD_10003_GT_RETUNR" />
+          <s:element minOccurs="0" maxOccurs="1" name="GT_UNID_MANIPULACION" type="tns:ArrayOfZSD_10003_GT_UNID_MANIPULACION" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfZSD_10003_GT_PARTICION">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ZSD_10003_GT_PARTICION" nillable="true" type="tns:ZSD_10003_GT_PARTICION" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZSD_10003_GT_PARTICION">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MATERIAL_HU" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CANTIDAD_LOTE" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="LOTE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CENTRO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ALMACEN" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfZSD_10003_GT_RETUNR">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ZSD_10003_GT_RETUNR" nillable="true" type="tns:ZSD_10003_GT_RETUNR" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZSD_10003_GT_RETUNR">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TYPE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUMBER" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MESSAGE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LOG_NO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LOG_MSG_NO" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MESSAGE_V1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MESSAGE_V2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MESSAGE_V3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MESSAGE_V4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PARAMETER" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ROW" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FIELD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SYSTEM" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfZSD_10003_GT_UNID_MANIPULACION">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ZSD_10003_GT_UNID_MANIPULACION" nillable="true" type="tns:ZSD_10003_GT_UNID_MANIPULACION" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZSD_10003_GT_UNID_MANIPULACION">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EXIDV" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ZMOV_30005">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="datos" type="tns:request_ZMOV_30005" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="request_ZMOV_30005">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LT_HUM_UPDATE_HEADER" type="tns:ArrayOfZMOV_30005_LT_HUM_UPDATE_HEADER" />
+          <s:element minOccurs="0" maxOccurs="1" name="IT_EXIDV" type="tns:ArrayOfZMOV_30005_IT_EXIDV" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfZMOV_30005_LT_HUM_UPDATE_HEADER">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ZMOV_30005_LT_HUM_UPDATE_HEADER" nillable="true" type="tns:ZMOV_30005_LT_HUM_UPDATE_HEADER" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZMOV_30005_LT_HUM_UPDATE_HEADER">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EXIDV" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FIELD_NAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FIELD_VALUE" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfZMOV_30005_IT_EXIDV">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ZMOV_30005_IT_EXIDV" nillable="true" type="tns:ZMOV_30005_IT_EXIDV" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZMOV_30005_IT_EXIDV">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EXIDV" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ZMOV_30005Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZMOV_30005Result" type="tns:responce_ZMOV_30005" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="responce_ZMOV_30005">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="IT_EXIDV" type="tns:ArrayOfZMOV_30005_IT_EXIDV" />
+          <s:element minOccurs="0" maxOccurs="1" name="LT_HUM_UPDATE_HEADER" type="tns:ArrayOfZMOV_30005_LT_HUM_UPDATE_HEADER" />
+          <s:element minOccurs="0" maxOccurs="1" name="LT_MESSAGES" type="tns:ArrayOfZMOV_30005_LT_MESSAGES" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfZMOV_30005_LT_MESSAGES">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ZMOV_30005_LT_MESSAGES" nillable="true" type="tns:ZMOV_30005_LT_MESSAGES" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZMOV_30005_LT_MESSAGES">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EXIDV" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="POSNR" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="HU_ITEM" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ZEILE" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MSGID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MSGTY" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MSGNO" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MSGV1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MSGV2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MSGV3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MSGV4" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ZMOV_10000">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="datos" type="tns:request_ZMOV_10000" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="request_ZMOV_10000">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CHARG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MATNR" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ZMOV_10000Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ZMOV_10000Result" type="tns:responce_ZMOV_10000" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="responce_ZMOV_10000">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CHAR_OF_BATCH" type="tns:ArrayOfZMOV_10000_CHAR_OF_BATCH" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfZMOV_10000_CHAR_OF_BATCH">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ZMOV_10000_CHAR_OF_BATCH" nillable="true" type="tns:ZMOV_10000_CHAR_OF_BATCH" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ZMOV_10000_CHAR_OF_BATCH">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ATNAM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ATWTB" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="XDELETE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CHAR_NOT_VALID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ATINN" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ATWTB_LONG" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ZMOV_10031SoapIn">
+    <wsdl:part name="parameters" element="tns:ZMOV_10031" />
+  </wsdl:message>
+  <wsdl:message name="ZMOV_10031SoapOut">
+    <wsdl:part name="parameters" element="tns:ZMOV_10031Response" />
+  </wsdl:message>
+  <wsdl:message name="ZSD_10003SoapIn">
+    <wsdl:part name="parameters" element="tns:ZSD_10003" />
+  </wsdl:message>
+  <wsdl:message name="ZSD_10003SoapOut">
+    <wsdl:part name="parameters" element="tns:ZSD_10003Response" />
+  </wsdl:message>
+  <wsdl:message name="ZMOV_30005SoapIn">
+    <wsdl:part name="parameters" element="tns:ZMOV_30005" />
+  </wsdl:message>
+  <wsdl:message name="ZMOV_30005SoapOut">
+    <wsdl:part name="parameters" element="tns:ZMOV_30005Response" />
+  </wsdl:message>
+  <wsdl:message name="ZMOV_10000SoapIn">
+    <wsdl:part name="parameters" element="tns:ZMOV_10000" />
+  </wsdl:message>
+  <wsdl:message name="ZMOV_10000SoapOut">
+    <wsdl:part name="parameters" element="tns:ZMOV_10000Response" />
+  </wsdl:message>
+  <wsdl:portType name="rfcNetSoap">
+    <wsdl:operation name="ZMOV_10031">
+      <wsdl:input message="tns:ZMOV_10031SoapIn" />
+      <wsdl:output message="tns:ZMOV_10031SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZSD_10003">
+      <wsdl:input message="tns:ZSD_10003SoapIn" />
+      <wsdl:output message="tns:ZSD_10003SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZMOV_30005">
+      <wsdl:input message="tns:ZMOV_30005SoapIn" />
+      <wsdl:output message="tns:ZMOV_30005SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ZMOV_10000">
+      <wsdl:input message="tns:ZMOV_10000SoapIn" />
+      <wsdl:output message="tns:ZMOV_10000SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="rfcNetSoap" type="tns:rfcNetSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ZMOV_10031">
+      <soap:operation soapAction="http://tempuri.org/ZMOV_10031" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZSD_10003">
+      <soap:operation soapAction="http://tempuri.org/ZSD_10003" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZMOV_30005">
+      <soap:operation soapAction="http://tempuri.org/ZMOV_30005" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZMOV_10000">
+      <soap:operation soapAction="http://tempuri.org/ZMOV_10000" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="rfcNetSoap12" type="tns:rfcNetSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ZMOV_10031">
+      <soap12:operation soapAction="http://tempuri.org/ZMOV_10031" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZSD_10003">
+      <soap12:operation soapAction="http://tempuri.org/ZSD_10003" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZMOV_30005">
+      <soap12:operation soapAction="http://tempuri.org/ZMOV_30005" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZMOV_10000">
+      <soap12:operation soapAction="http://tempuri.org/ZMOV_10000" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="rfcNet">
+    <wsdl:port name="rfcNetSoap" binding="tns:rfcNetSoap">
+      <soap:address location="http://200.54.43.156/BLUMAR/rfcNet.asmx" />
+    </wsdl:port>
+    <wsdl:port name="rfcNetSoap12" binding="tns:rfcNetSoap12">
+      <soap12:address location="http://200.54.43.156/BLUMAR/rfcNet.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

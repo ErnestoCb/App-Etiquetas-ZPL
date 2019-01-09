@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Blumar>
+  <seleccion>
+    <idCentro>0002</idCentro>
+  </seleccion>
+  <centros>
+    <centro id="0001">
+      <nombre>Centro de prueba 1</nombre>
+    </centro>
+    <centro id="0002">
+      <nombre>Centro de prueba 2</nombre>
+    </centro>
+    <centro id="0003">
+      <nombre>Centro de prueba 3</nombre>
+    </centro>
+    <centro id="0004">
+      <nombre>Centro de prueba 4</nombre>
+    </centro>
+    <centro id="0005">
+      <nombre>Centro de prueba 5</nombre>
+    </centro>
+  </centros>
+</Blumar>
